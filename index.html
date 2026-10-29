@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dilsah Collection – Gantungan Kunci</title>
+<link rel="icon" href="images/logo.jpeg">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff;--surface:#ffffff;--ink:#16060f;--mut:#7a5a6b;--pink:#ff1f8e;--tint:#fff0f7;--line:#f5d6e6;--wa:#12c15a;
+  --h:'Bricolage Grotesque','Inter',system-ui,sans-serif;--b:'Inter',system-ui,sans-serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12040b;--surface:#1b0812;--ink:#fff0f7;--mut:#d9a3bf;--tint:#230a18;--line:#43152d;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#12040b;--surface:#1b0812;--ink:#fff0f7;--mut:#d9a3bf;--tint:#230a18;--line:#43152d;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--b)}
+h1,h2,h3{font-family:var(--h);margin:0;line-height:1.05;letter-spacing:-.02em}
+button{font:inherit;color:inherit;cursor:pointer}
+img{display:block}
+:focus-visible{outline:3px solid var(--pink);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font:800 1.05rem var(--h);text-decoration:none;color:inherit}
+.brand .lg{width:38px;height:38px;border-radius:50%;overflow:hidden;border:2px solid var(--pink)}
+.lg img{width:100%;height:100%;object-fit:cover;transform:scale(1.18)}
+.pill{background:var(--pink);color:#fff;border:0;border-radius:999px;padding:10px 20px;font-weight:600;text-decoration:none;display:inline-block;transition:transform .2s,box-shadow .2s}
+.pill:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(255,31,142,.4)}
+.pill.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.pill.ghost:hover{box-shadow:none;background:var(--ink);color:var(--bg)}
+
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;padding:56px 0 64px}
+.eyebrow{display:inline-block;font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--pink);margin-bottom:16px}
+.hero h1{font-size:clamp(2.8rem,8vw,5.6rem);font-weight:800}
+.hero h1 mark{background:var(--pink);color:#fff;padding:0 .18em;border-radius:.18em;display:inline-block;transform:rotate(-2deg)}
+.hero p{max-width:440px;color:var(--mut);margin:20px 0 28px;font-size:1.05rem}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.art{position:relative;aspect-ratio:1/1;max-width:420px;width:100%;margin-left:auto}
+.art .blob{position:absolute;inset:6%;background:var(--pink);border-radius:46% 54% 50% 50%/52% 46% 54% 48%}
+.art .big{position:absolute;inset:14%;border-radius:50%;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.25);background:#fff}
+.art .big img{width:100%;height:100%;object-fit:cover;transform:scale(1.18)}
+.fl{position:absolute;width:26%;aspect-ratio:1;border-radius:50%;overflow:hidden;border:4px solid var(--bg);box-shadow:0 10px 24px rgba(0,0,0,.2);animation:fl 5s ease-in-out infinite}
+.fl img{width:100%;height:100%;object-fit:cover;transform:scale(2.2)}
+.fl.a{left:-4%;top:6%}.fl.b{right:-2%;top:30%;animation-delay:-1.6s}.fl.c{left:6%;bottom:0;animation-delay:-3.2s}
+@keyframes fl{50%{transform:translateY(-10px)}}
+
+.mq{background:var(--pink);color:#fff;overflow:hidden;white-space:nowrap;padding:14px 0;font:800 1.1rem var(--h);letter-spacing:.06em}
+.mq div{display:inline-block;animation:mq 22s linear infinite}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+.sec{padding:72px 0 40px}
+.sec-h{display:flex;justify-content:space-between;align-items:end;margin-bottom:28px;gap:12px}
+.sec-h h2{font-size:clamp(2rem,5vw,3.2rem);font-weight:800}
+.sec-h span{color:var(--mut);font-size:.95rem}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.card{display:flex;flex-direction:column;gap:12px}
+.ph{position:relative;padding:0;border:0;border-radius:26px;overflow:hidden;aspect-ratio:4/5;background:var(--tint)}
+.ph img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.card:hover .ph img{transform:scale(1.07)}
+.tag{position:absolute;left:12px;top:12px;background:#fff;color:#16060f;font-size:.74rem;font-weight:600;padding:4px 11px;border-radius:999px}
+.more{position:absolute;left:12px;right:12px;bottom:12px;background:rgba(255,255,255,.92);color:#16060f;border-radius:999px;font-size:.82rem;font-weight:600;padding:8px;text-align:center;opacity:0;transform:translateY(8px);transition:.3s}
+.card:hover .more,.ph:focus-visible .more{opacity:1;transform:none}
+.row{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.nm{font:600 1.08rem var(--h);letter-spacing:-.01em}
+.pr{color:var(--mut);font-weight:500}
+.add{width:42px;height:42px;flex:none;border-radius:50%;border:0;background:var(--ink);color:var(--bg);font-size:1.1rem;transition:.2s}
+.add:hover{background:var(--pink);color:#fff;transform:rotate(-12deg) scale(1.08)}
+
+dialog{border:0;padding:0;width:min(1020px,95vw);max-height:92vh;border-radius:30px;background:var(--surface);color:var(--ink);overflow:auto;box-shadow:0 30px 80px rgba(0,0,0,.4)}
+dialog::backdrop{background:rgba(22,6,15,.62);backdrop-filter:blur(4px)}
+.x{position:sticky;top:12px;float:right;margin:12px 12px 0 0;z-index:5;width:42px;height:42px;border-radius:50%;border:0;background:var(--ink);color:var(--bg);font-size:1.1rem}
+.det{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;padding:26px}
+.stage{position:relative;aspect-ratio:1/1;border-radius:24px;overflow:hidden;background:var(--tint);touch-action:pan-y}
+.stage img{width:100%;height:100%;object-fit:cover}
+[hidden]{display:none!important}
+.nav{position:absolute;top:50%;translate:0 -50%;width:42px;height:42px;border-radius:50%;border:0;background:rgba(255,255,255,.92);color:#16060f;font-size:1.4rem;line-height:1}
+.nav.p{left:12px}.nav.n{right:12px}
+.cnt{position:absolute;left:14px;bottom:14px;background:rgba(22,6,15,.7);color:#fff;font-size:.78rem;padding:5px 12px;border-radius:999px}
+.th{display:grid;grid-template-columns:repeat(auto-fill,minmax(64px,1fr));gap:10px;margin-top:12px}
+.th button{padding:0;border:2px solid transparent;border-radius:16px;overflow:hidden;aspect-ratio:1;background:var(--tint);opacity:.6;transition:.2s}
+.th button[aria-current="true"]{border-color:var(--pink);opacity:1}
+.th img{width:100%;height:100%;object-fit:cover}
+.inf{display:flex;flex-direction:column;justify-content:center;gap:14px}
+.inf h2{font-size:clamp(1.9rem,4vw,2.8rem);font-weight:800}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:8px}
+.kat{font-size:.82rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--mut)}
+.pp{font:800 2rem var(--h);color:var(--pink)}
+.inf p{margin:0;color:var(--mut)}
+.qty{display:flex;align-items:center;gap:14px;font-weight:600}
+.qty button{width:38px;height:38px;border-radius:50%;border:1.5px solid var(--line);background:transparent;font-size:1.2rem}
+.wa{background:var(--wa);color:#fff;border:0;border-radius:999px;padding:16px;font-weight:600;font-size:1.02rem;transition:.2s}
+.wa:hover{filter:brightness(.92);transform:translateY(-2px)}
+.oth{padding:4px 26px 28px}
+.oth h3{font-size:1.3rem;margin-bottom:12px}
+.strip{display:flex;gap:14px;overflow-x:auto;padding-bottom:8px}
+.mini{flex:0 0 150px;background:none;border:0;padding:0;text-align:left}
+.mini .im{aspect-ratio:1;border-radius:20px;overflow:hidden;background:var(--tint);border:2px solid transparent;transition:.2s}
+.mini:hover .im{border-color:var(--pink)}
+.mini img{width:100%;height:100%;object-fit:cover}
+.mini b{display:block;font:600 .92rem var(--h);margin-top:8px;line-height:1.2}
+.mini span{font-size:.85rem;color:var(--mut)}
+
+footer{margin-top:72px;border-top:1px solid var(--line);padding:36px 0 48px}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;color:var(--mut)}
+
+@media (max-width:860px){
+  .grid{grid-template-columns:repeat(2,1fr);gap:14px}
+  .hero{grid-template-columns:1fr;padding-top:36px}
+  .art{margin:0 auto;max-width:320px;order:-1}
+  .det{grid-template-columns:1fr;padding:16px;gap:18px}
+  .more{opacity:1;transform:none}
+  .oth{padding:4px 16px 24px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <a class="brand" href="#"><span class="lg"><img src="images/logo.jpeg" alt="Logo Dilsah Collection"></span>Dilsah Collection</a>
+  <a class="pill" id="navWa" href="#" target="_blank" rel="noopener">Pesan Lewat WhatsApp</a>
+</div></nav>
+
+<header class="wrap hero">
+  <div>
+    <span class="eyebrow">✦ Gantungan Kunci</span>
+    <h1>Lucu,<br>Gemes <mark>Imut.</mark></h1>
+    <p>Gantungan kunci dari kawat bulu yang dirangkai satu per satu dengan tangan. Warna menyala, detail mutiara, siap bikin kamu jadi pusat perhatian.</p>
+    <div class="cta">
+      <a class="pill" href="#koleksi">Lihat koleksi</a>
+      <a class="pill ghost" id="heroWa" href="#" target="_blank" rel="noopener">Tanya produk</a>
+    </div>
+  </div>
+  <div class="art" aria-hidden="true">
+    <div class="blob"></div>
+    <div class="big"><img src="images/logo.jpeg" alt=""></div>
+    <div class="fl a"><img src="images/anggur.png" alt=""></div>
+    <div class="fl b"><img src="images/leci.png" alt=""></div>
+    <div class="fl c"><img src="images/strawberri.png" alt=""></div>
+  </div>
+</header>
+
+<div class="mq" aria-hidden="true"><div id="mq"></div></div>
+
+<main class="wrap sec" id="koleksi">
+  <div class="sec-h"><h2>Koleksi</h2><span id="count"></span></div>
+  <div class="grid" id="grid"></div>
+</main>
+
+<footer><div class="wrap">
+  <span class="brand"><span class="lg"><img src="images/logo.jpeg" alt=""></span>Dilsah Collection</span>
+  <span>Dibuat dengan penuh cinta · Pesan lewat WhatsApp ♡</span>
+</div></footer>
+
+<dialog id="dlg" aria-label="Detail produk">
+  <button class="x" id="close" aria-label="Tutup">✕</button>
+  <div class="det">
+    <div>
+      <div class="stage" id="stage">
+        <img id="main" alt="">
+        <button class="nav p" id="prev" aria-label="Foto sebelumnya">‹</button>
+        <button class="nav n" id="next" aria-label="Foto berikutnya">›</button>
+        <span class="cnt" id="cnt"></span>
+      </div>
+      <div class="th" id="th"></div>
+    </div>
+    <div class="inf">
+      <span class="kat" id="dKat"></span>
+      <h2 id="dName"></h2>
+      <div class="pp" id="dPrice"></div>
+      <p id="dDesc"></p>
+      <div class="qty">Jumlah <button id="minus" aria-label="Kurangi">−</button><span id="qty">1</span><button id="plus" aria-label="Tambah">+</button></div>
+      <button class="wa" id="order">Pesan via WhatsApp</button>
+    </div>
+  </div>
+  <div class="oth"><h3>Koleksi lainnya</h3><div class="strip" id="strip"></div></div>
+</dialog>
+
+<script>
+/* ====== PENGATURAN TOKO ====== */
+const WA_NUMBER = "6285737344561"; // ganti: format 62..., tanpa 0 dan tanpa +
+const STORE = "Dilsah Collection";
+
+/* ====== DAFTAR PRODUK ======
+   src    = foto utama (tampil di katalog)
+   photos = foto-foto lain untuk galeri, mis. photos:["images/anggur-2.jpg","images/anggur-3.jpg"]
+   Produk baru: salin satu blok {id:...}, tempel di bawahnya, ubah id (angka baru) dan isinya. */
+const PRODUCTS = [
+  {id:1,name:"Buah Anggur",kat:"Gantungan kunci",price:11500,color:"#7b2cff",tag:"Terlaris",
+   src:"images/anggur.png",
+   photos:["images/anggur1.jpeg","images/anggur2.jpeg"],
+   desc:"Anggur dari bulu kawat ungu pekat, dihiasi mutiara mungil dan daun hijau segar. Manis untuk tas, tote, atau kunci motor."},
+
+  {id:2,name:"Buah Leci",kat:"Gantungan kunci",price:9500,color:"#ff1f5a",tag:"Baru",
+   src:"images/leci.png",
+   photos:["images/leci1.jpeg","images/leci2.jpeg"],
+   desc:"Dua leci merah menyala dengan tangkai dan pita daun hijau, plus satu mutiara kecil. Pas untuk resleting tas dan pouch."},
+
+  {id:3,name:"Buah Jeruk",kat:"Gantungan kunci",price:9500,color:"#ff7a00",tag:"Terlaris",
+   src:"images/jeruk.png",
+   photos:["images/jeruk1.jpeg","images/jeruk2.jpeg"],
+   desc:"Jeruk oranye cerah yang empuk dan berlekuk, dengan daun hijau melengkung. Warna ceria yang bikin tasmu langsung hidup."},
+
+  {id:4,name:"Buah Strawberry",kat:"Gantungan kunci",price:11500,color:"#ff2b4a",tag:"Favorit",
+   src:"images/strawberri.png",
+   photos:["images/strawberri1.jpeg","images/strawberri2.jpeg"],
+   desc:"Strawberry merah menyala dari bulu tebal lembut, bertabur mutiara dan daun hijau. Ukurannya pas digenggam."},
+];
+
+/* ====== KODE DI BAWAH INI TIDAK PERLU DIUBAH ====== */
+const $ = id => document.getElementById(id);
+const rp = n => "Rp " + n.toLocaleString("id-ID");
+const pics = p => [p.src, ...(p.photos || [])];
+let cur = null, idx = 0, qty = 1;
+
+const wa = text => `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`;
+$("navWa").href = wa(`Halo ${STORE}, saya mau tanya produknya ya 🌸`);
+$("heroWa").href = $("navWa").href;
+$("mq").innerHTML = "<span>HANDMADE ✦ LUCU ✦ AESTHETIC ✦ WARNA MENYALA ✦ </span>".repeat(8);
+$("count").textContent = PRODUCTS.length + " produk";
+
+$("grid").innerHTML = PRODUCTS.map(p => `
+  <article class="card">
+    <button class="ph" data-open="${p.id}" aria-label="Lihat ${p.name}">
+      <img src="${p.src}" alt="${p.name}" loading="lazy">
+      ${p.tag ? `<span class="tag">${p.tag}</span>` : ""}
+      <span class="more">${pics(p).length > 1 ? "Lihat " + pics(p).length + " foto" : "Lihat detail"}</span>
+    </button>
+    <div class="row">
+      <div><div class="nm"><i class="dot" style="background:${p.color}"></i>${p.name}</div><div class="pr">${rp(p.price)}</div></div>
+      <button class="add" data-order="${p.id}" aria-label="Pesan ${p.name}">↗</button>
+    </div>
+  </article>`).join("");
+
+function setView(i){
+  const list = pics(cur), n = list.length; idx = (i + n) % n;
+  $("main").src = list[idx];
+  $("cnt").textContent = `${idx+1}/${n}`;
+  [...$("th").children].forEach((b,k) => b.setAttribute("aria-current", k === idx));
+}
+function openP(id){
+  cur = PRODUCTS.find(p => p.id === id); qty = 1;
+  const list = pics(cur), multi = list.length > 1;
+  $("main").alt = cur.name;
+  $("dKat").textContent = cur.kat; $("dName").textContent = cur.name;
+  $("dPrice").textContent = rp(cur.price); $("dDesc").textContent = cur.desc; $("qty").textContent = 1;
+  $("th").innerHTML = list.map((s,k) => `<button data-v="${k}" aria-label="Foto ${k+1}"><img src="${s}" alt=""></button>`).join("");
+  ["prev","next","cnt","th"].forEach(x => $(x).hidden = !multi);
+  setView(0);
+  $("strip").innerHTML = PRODUCTS.filter(o => o.id !== id).map(o => `
+    <button class="mini" data-open="${o.id}"><div class="im"><img src="${o.src}" alt=""></div><b>${o.name}</b><span>${rp(o.price)}</span></button>`).join("");
+  if(!$("dlg").open) $("dlg").showModal();
+  $("dlg").scrollTo({top:0,behavior:"smooth"});
+}
+function order(p,q){
+  window.open(wa(`Halo ${STORE}, saya mau pesan:\n\n*${p.name}*\nJumlah: ${q}\nHarga satuan: ${rp(p.price)}\nTotal: ${rp(p.price*q)}\n\nApakah masih tersedia? Terima kasih 🌸`),"_blank","noopener");
+}
+
+document.addEventListener("click", e => {
+  const o = e.target.closest("[data-open]"); if(o) return openP(+o.dataset.open);
+  const b = e.target.closest("[data-order]"); if(b) return order(PRODUCTS.find(p => p.id === +b.dataset.order),1);
+  const v = e.target.closest("[data-v]"); if(v) setView(+v.dataset.v);
+});
+$("prev").onclick = () => setView(idx-1);
+$("next").onclick = () => setView(idx+1);
+$("plus").onclick = () => $("qty").textContent = qty = Math.min(99,qty+1);
+$("minus").onclick = () => $("qty").textContent = qty = Math.max(1,qty-1);
+$("order").onclick = () => order(cur,qty);
+$("close").onclick = () => $("dlg").close();
+$("dlg").addEventListener("click", e => { if(e.target === $("dlg")) $("dlg").close(); });
+document.addEventListener("keydown", e => {
+  if(!$("dlg").open) return;
+  if(e.key === "ArrowLeft") setView(idx-1);
+  if(e.key === "ArrowRight") setView(idx+1);
+});
+let sx = 0;
+$("stage").addEventListener("touchstart", e => sx = e.touches[0].clientX, {passive:true});
+$("stage").addEventListener("touchend", e => { const d = e.changedTouches[0].clientX - sx; if(Math.abs(d) > 40) setView(idx + (d < 0 ? 1 : -1)); });
+</script>
+</body>
+</html>
